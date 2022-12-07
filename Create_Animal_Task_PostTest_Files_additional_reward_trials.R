@@ -161,23 +161,3 @@ write.xlsx(recall.template, '/Users/morganbotdorf/Dropbox/!Science Learning/3.re
 write.xlsx(recall.1, '/Users/morganbotdorf/Dropbox/!Science Learning/3.recall_loop_C_1.xlsx', row.names = FALSE)
 write.xlsx(recall.2, '/Users/morganbotdorf/Dropbox/!Science Learning/3.recall_loop_C_2.xlsx', row.names = FALSE)
 write.xlsx(recall.3, '/Users/morganbotdorf/Dropbox/!Science Learning/3.recall_loop_C_3.xlsx', row.names = FALSE)
-
-
-
-
-
-
-
-
-
-
-
-###################################DON'T NEED TO RUN BELOW CODE#####################################################
-#concatenate columns
-sorting<-read.csv("/Users/morganbotdorf/Dropbox/!Science Learning/010_CuriositySortingPhase_B_2022_May_18_1819.csv")
-
-# stacking the first through third columns and then binding rest
-sorting = sorting[-c(1:4),]
-sorting_stacked <- cbind(stack(sorting[1:3]), sorting[4:91])
-View(sorting_stacked)
-print(data_mod)
